@@ -136,12 +136,12 @@ Keeps **only the rows from Table 2 that do NOT have a matching row in Table 1**.
 
 | Join Type   | Rows from Table 1 | Rows from Table 2 | Best For |
 |-------------|:-----------------:|:-----------------:|----------|
-| Left Outer  | ✅ All            | ✅ Matching only  | Enrich master table |
-| Right Outer | ✅ Matching only  | ✅ All            | Preserve secondary table |
-| Full Outer  | ✅ All            | ✅ All            | Complete union, no data loss |
-| Inner       | ✅ Matching only  | ✅ Matching only  | Verified overlap only |
-| Left Anti   | ✅ Non-matching   | ❌ None           | Find gaps in Table 2 |
-| Right Anti  | ❌ None           | ✅ Non-matching   | Find gaps in Table 1 |
+| Left Outer  | All            | Matching only  | Enrich master table |
+| Right Outer | Matching only  | All            | Preserve secondary table |
+| Full Outer  | All            | All            | Complete union, no data loss |
+| Inner       | Matching only  | Matching only  | Verified overlap only |
+| Left Anti   | Non-matching   | None           | Find gaps in Table 2 |
+| Right Anti  | None           | Non-matching   | Find gaps in Table 1 |
 
 ---
 
